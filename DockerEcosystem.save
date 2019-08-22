@@ -1,0 +1,23 @@
+docker nasıl çalışır:
+Docker Engine Architecture:
+Docker Client > Docker Host > Docker Registry
+Docker Client:Kullanıcların docker ile etkileşime geçmesi 2 yol var
+Docker CLI:docker run + docker pull : Doğrudan terminal ile
+Docker API:client.containers.run + client.containers.list:uygulama ile docker arasında iletişimi sağlar
+Docker Host:docker daemon yani:görevler konteynırı
+Docker daemon,containers,images
+Docker Daemon: builds Dockerfile ve docker image aktifleştirir.
+Konteynır docker image ve docker damon ile ileşime geçebiblir.
+Docker client ile docker host API calls ile iletişime geçer
+
+Docker Registry:images
+docker imagelerini depolar ve  kullanıma hazırlar diğerleri için.
+docker host >images<docker registery:push and pull images
+1.docker client= docker cli+docker api
+2.docker registery:images
+3.docker host:docker daemon+containers+images
+Dockerfile:3 bölümden oluşur
+1fundamental instruction
+2.configuration
+3.execution
+
